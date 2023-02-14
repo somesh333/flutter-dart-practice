@@ -44,5 +44,14 @@ command: dart pub global activate devtools.
 
 ---------------------------
 Components:-
+Dart packages: Packages is bunch of library ,
+    And Library is only part that are publicly accessible to everyone
+
+----------------------------------
+
+Null safety
+
+Null Safety in simple words means a variable cannot contain a 'null' value unless you initialized with null to that variable. With null safety, all the runtime null-dereference errors will now be shown in compile time. String name = null ; // This means the variable name has a null value.
+
 
 
