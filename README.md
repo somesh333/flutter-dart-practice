@@ -44,14 +44,64 @@ command: dart pub global activate devtools.
 
 ---------------------------
 Components:-
-Dart packages: Packages is bunch of library ,
-    And Library is only part that are publicly accessible to everyone
 
-----------------------------------
+Sounds Null Safety:- we see that for null value we have a nulled DataType "int? , Double?" for stored the null values
 
-Null safety
+dart enhanced, 
+control flow analysis: Dart Analyser:=> is very helpfull and understand the code and set dynamic variable value
 
-Null Safety in simple words means a variable cannot contain a 'null' value unless you initialized with null to that variable. With null safety, all the runtime null-dereference errors will now be shown in compile time. String name = null ; // This means the variable name has a null value.
+Assertion Operator "!"
+But what happen dart analyser not understand the code and throw error ?
+=> At this situation Null assertion operator was introduce "!"
 
+Uses:  int? _speed;
+      
+       void brake(){
+       int trackSpeed = _speed! - 25;
+      }
 
+//but in this case car never be in null speed it can 0 or 100 but never be in null 
 
+for this dart introduce new modifire named is "late"
+
+Uses:  late int _speed;
+      
+       void brake(){
+       int trackSpeed = _speed - 25;
+      }
+
+=================================================================
+<1.> Dart Variable
+
+Dart Variable:
+Their are four type of variable :-
+1) Top-level
+2) Static
+3) Instance
+4) Local 
+
+standard declaration of variable in dart
+=> String car = "BMW";      //car is variable name(identifire)
+                            //BMW is value od the variable
+                            //string is the type of variable
+
+And more complex variable init is:
+=>static late final int temp = checkTemp(); 
+
+//variable in dart store references to on object 
+------------------------------------------------------------
+
+<1.1> Dart Variable types .
+
+1)Dynamic 
+2)var 
+3)final 
+4)const  //this is least restrictive to most restrictive
+
+============================================================
+
+<2.> Built-In-Types
+
+1). num = int and double is a part of number.
+2) string interpolation = $temperature , ${celcius.toUpperCase()} 
+3) List = List<Object?> allList = [2, 2.5, "som", null,true]
