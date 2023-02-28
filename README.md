@@ -105,3 +105,63 @@ And more complex variable init is:
 1). num = int and double is a part of number.
 2) string interpolation = $temperature , ${celcius.toUpperCase()} 
 3) List = List<Object?> allList = [2, 2.5, "som", null,true]
+
+===========================================================
+
+Function:-
+Anonymous function(clouser / lambdas) : this is important to understand the flutter builder funtion.
+
+===========================================================
+
+Operator:-
+
+Type test operator:
+1) as: typecast (also used with library prefixes)
+
+eg: var i = list[0] as int; // this we will do when we 100% sure the about type
+
+2) is: true if the object has the specified type
+
+eg: if(element is int) //here we use condition
+
+3) is! : true if the object doesn't have the specified type
+
+=================================================================
+
+Switch case:-
+
+enum : a special class use to represent a fixed number of constant value.
+
+eg: wheather condition enum containing all type of all condition
+
+=> enum Condition {Sunny , Rainy , cloudy}
+
+====================================================================
+
+Topic= class constructor:
+
+named constructor:- In this we reassign the same constructor
+
+=> class A{
+A();
+
+A.zero()  //this we can ressign the same constructor
+
+}
+
+------------------------------------
+
+redirecting constructors: redirect to core to other constructor from inside the class
+
+
+
+
+
+
+
+
+
+
+
+
+
